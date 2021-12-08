@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>How to Handle a Spear Phishing Email</title>
+</head>
+<div id="nav">
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../aboutme.html">About Me</a></li>
+        <li><a href="../posts.html">Posts</a></li>
+        <li><a href="../socials.html">Socials</a></li>
+    </ul>
+</div>
+
+<div class="row">
+    <h2>How to Handle a Spear Phishing Email</h2>
+    <h5>Posted on, April 6, 2019 </h5>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <p>Whats up! Today I thought it would be interesting to go over some general steps of handling a spear phishing
+        email. These are some steps I used to take at my previous job as an Infosec Specialist. I was the main one who
+        handled spear phishing emails. We were a small team. Maybe things have changed now, but I still think there's
+        some info for others to gain insight into.</p>
+
+    <p>* Spear phishing email - These aren't you mothers standard "You won the lottery!" phishing email, these are
+        much more targeted to your organization and attackers have tailor their emails to look very similar to your
+        organizations.</p>
+
+    <p>Now for argument sake, I will go through these steps assuming the following:</p>
+        <p>* there is no attachment</p>
+        <p>* you have the original email, not a forwarded email</p>
+        <p>* you know what to do once an account is compromised</p>
+        <p>* the malicious link does not use a link shortener</p>
+
+
+    <h3>1. Check the Email headers</h3>
+        <p>Now if you don't know how to decipher the long poetry that is an email headers, its alright, I'm here for you.
+            Luckily you use</p>
+
+        <p><b>MXToolBox: </b><a href="https://mxtoolbox.com/EmailHeaders.aspx">https://mxtoolbox.com/EmailHeaders.aspx</a></p>
+
+        <p>It's a handy website that has various useful tools you have to use. Specifically they have a Email Header
+            Analyzer and does checks on the mail servers, and displays the information much more understandable.</p>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><img src="../images/20190406/MX.png" alt="">
+
+
+    <h3>2. Check the Phishing Site</h3>
+        <p>Do not go to the site directly in a browser. You're just asking for trouble. Instead check out</p>
+
+        <p><b>VirusTotal: </b><a href="https://www.virustotal.com">https://www.virustotal.com</a></p>
+
+        <p>Here you can check if the site has been reported, and flagged as
+            malicious. If not, it will let them know to watch out for it in case others are seeing similar traffic.
+            Additionally they provide you the final site, in case it redirects, and an IP which you WILL use in the
+            next step.</p>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><img src="../images/20190406/VIRUSTOTAL.png" alt="">
+
+
+    <h3>3. Find the owner of the Domain and report it to the email</h3>
+        <p>You have two options here,</p>
+        <p>* Go to a terminal (don't be afraid of the terminal), and  type
+            whois [badsite.blah]</p>
+        <p>* Alternatively, if for whatever reason you don't have a terminal option, you can go to</p>
+
+        <p><b>ARIN: </b><a href="https://www.arin.net/">https://www.arin.net/</a> and type in the IP of the site</p>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><img src="../images/20190406/ARIN.png" alt="">
+
+        <p>ARIN is not your best option for a contact since you are bound to run into a site that is not American, but it
+            will give you a starting point, to which you will need to follow down the rabbit hole to find a contact.</p>
+
+        <p>Both options will provide you with a contact, except one is faster, and speed is important in these scenario.
+            Exponentially increasing compromised accounts while a spear phishing issue is happening is... NOT fun. So git
+            gud and use a damn terminal. You'll thank me later. Once you report the site to be malicious, the owner can
+            mitigate how to shut down the site.</p>
+
+    <h3>4. Do Your Due Diligence (don't be a jerk)</h3>
+
+        <p>Once you have reported the site, it would be a nice idea to submit the phishing site to</p>
+
+        <p><b>Google: </b><a href="https://safebrowsing.google.com/safebrowsing/report_phish/">https://safebrowsing.google.com/safebrowsing/report_phish/</a></p>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><img src="../images/20190406/REPORTPHISH.png" alt="">
+
+
+    <p>And huzzah! Now you're ready! If more spear phishing emails come in with varying style or links, you just need
+        to repeat the process as needed.</p>
+
+    <p>Hope this post was helpful!</p>
+
+    <p>Happy securing! <3</p>
+
+</div>
+
+
+<style type="text/css">
+    header, h1{
+        padding: 30px;
+        font-size: 40px;
+        text-align: center;
+        background: #909094;
+    }
+    h3 {
+        font-size: 20px;
+        text-align: left;
+        color: #3d94ca;
+    }
+    h2 {
+        font-size: 40px;
+        color: #3d94ca;
+    }
+
+    h5 {
+        color: #ffffff;
+    }
+
+    a:link {
+        color:  white;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #3d94ca;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+
+    body {
+        width: 70%;
+        margin: 0 auto;
+        font-family: Arial, Verdana, sans-serif;
+        background-color: #2b2b2d;
+    }
+
+    #nav {
+        margin: 1%;
+        background-color: #1e1e1f;
+        padding: 0.5em 0;
+    }
+
+    p {
+        color: #ffffff;
+        position: center
+    }
+
+    li {
+        display: inline;
+        padding: 0.5em;
+    }
+
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+        height: auto;
+    }
+
+</style>
+
+</html>
