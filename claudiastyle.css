@@ -102,10 +102,9 @@ a:visited{
 }
 
 .main-content p{
-    padding:20px 0px;
     color: #ffffff;
     position: center;
-
+    width: 60%;
     text-align: left;
     top: 5%;
     left: 150px;
@@ -120,17 +119,22 @@ a:visited{
     text-align: center;
 }
 
-.blog-post p{
-    color: #fff;
+.blog-post img{
+    margin-left: 100px;
+    position: center;
+    width: 30%;
+    height: auto;
 }
 
-
+.blog-post p{
+    width: 60%;
+    color: #fff;
+}
 
 .blog-post card{
     padding:20px 0px;
     text-align: left;
-    color: #808080
-;
+    color: #808080;
 }
 
 .blog-post a:link{
