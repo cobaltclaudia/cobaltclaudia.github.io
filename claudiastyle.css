@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #2b2b2d;
+    font-family: 'Nunito Sans', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+
+.header{
+   width: 100%;
+   height: 60vh;
+   position: relative;
+   color: #fff;
+
+}
+
+.header .navbar{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: 30px;
+    color: #fff;
+}
+
+.logo img{
+}
+
+.menu{
+}
+.menu ul{
+    padding:25px 15px;
+    text-decoration: none;
+    border:1px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #fff;
+}
+
+a:visited{
+    color: white;
+}
+
+.menu ul li{
+    margin: 0;
+    padding:15px 20px;
+    text-decoration: none;
+    border:1px;
+    font-weight: 600;
+
+}
+.menu ul li a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+.menu ul li a:hover{
+    color: #3d94ca;
+}
+
+
+.main-content, .blog-post{
+        width: 80%;
+        height: 70%;
+        position: absolute;
+        text-align: center;
+        top: 5%;
+        left: 150px;
+        color: #fff;
+}
+
+.main-content row{
+}
+
+.blog-post h3{
+    padding:10px 0px;
+    font-size: 30px;
+    color: #3d94ca;
+}
+
+.blog-post, .main-content p{
+    padding:20px 0px;
+    color: #ffffff;
+    position: center
+}
+
+.blog-post card{
+    padding:20px 0px;
+}
+
+
+.app-text {
+    color: #fff;
+
+}
+
+.app-text h3{
+    color: #fff;
+
+}
+
+.app-text h1{
+    color: #fff;
+
+}
+
+.column{
+    float: center;
+    margin: 1%;
+    color: #fff;
+    position: absolute;
+}
+
+
+.app-text p{
+   color: #ffffff;
+       position: center
+
+}
+
+.social-icons{
+    position: fixed;
+    right: 30px;
+    top: 30px;
+}
+
+.social-icons ul li{
+    margin-top: 5px;
+    text-align: center;
+}
+
+.social-icons ul li a{
+    color: #000
+    padding: 10px;
+    display: block;
+    font-size: 29px;
+}
+
+.social-icons ul li a:hover{
+    color: #fff;
+}
