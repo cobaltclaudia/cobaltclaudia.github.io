@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     background-color: #2b2b2d;
     font-family: 'Nunito Sans', sans-serif;
 }
@@ -12,16 +13,14 @@ ul{
     list-style: none;
 }
 
-
 .header{
    width: 100%;
    height: 60vh;
    position: relative;
    color: #fff;
-
 }
 
-.header .navbar{
+.header{
     width: 100%;
     height: 80px;
     display: flex;
@@ -35,8 +34,18 @@ ul{
 .logo img{
 }
 
-.menu{
+.menu .icon {
+    display: none;
 }
+
+@media screen and (max-width: 600px) {
+  .menu a:not(:first-child) {display: none;}
+  .men a.icon {
+    float: right;
+    display: block;
+  }
+}
+
 .menu ul{
     padding:25px 15px;
     text-decoration: none;
@@ -66,7 +75,6 @@ a:visited{
 .menu ul li a:hover{
     color: #3d94ca;
 }
-
 
 .main-content, .blog-post{
         width: 80%;
@@ -104,7 +112,6 @@ a:visited{
 .main-content p{
     color: #ffffff;
     position: center;
-    width: 60%;
     text-align: left;
     top: 5%;
     left: 150px;
@@ -115,7 +122,7 @@ a:visited{
     color: #3d94ca;
 }
 
-.main-content .socials p{
+.socials p{
     text-align: center;
 }
 
@@ -127,7 +134,6 @@ a:visited{
 }
 
 .blog-post p{
-    width: 60%;
     color: #fff;
 }
 
@@ -144,3 +150,6 @@ a:visited{
 .blog-post a:hover{
  color: #3d94ca;
 }
+
+
+
