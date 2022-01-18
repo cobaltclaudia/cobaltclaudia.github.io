@@ -1,60 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Posts</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="../claudiastyle.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="menu.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400&display=swap" rel="stylesheet">
+
+    <title>Posts</title>
 </head>
 <body>
-<div id="header">
-    <div id="navbar">
-        <div class="menu">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="aboutme.html">About Me</a></li>
-                <li><a href="posts.html">Posts</a></li>
-                <li><a href="socials.html">Socials</a></li>
-                <li><a href="projects.html">Projects</a></li>
-            </ul>
-        </div>
-
-        <div class="blog-post">
-                <div class="card">
-                    <h5>2021.02.10</h5>
-                    <h3><a href="blogposts/post-01-ohhello.html">Oh Hello</a></h3>
-                </div><br>
-
-                <div class="card">
-                    <h5>2019.03.23 </h5>
-                    <h3><a href="blogposts/20190323-DataClassFrameworksLegalAgreements.html">Data Classification,
-                        Frameworks and Legal Agreements in Infosec</a></h3>
-                </div><br>
-
-                <div class="card">
-                    <h5>2019.04.06 </h5>
-                    <h3><a href="blogposts/20190406-spearphish.html">How to Handle a Spear Phishing Email</a></h3>
-                </div><br>
-
-                <div class="card">
-                    <h5>2019.02.16 </h5>
-                    <h3><a href="blogposts/20190216-BooksIReadin2018.html">Books I Read in 2018</a></h3>
-                </div><br>
-
-                <div class="card">
-                    <h5>2018.08.18</h5>
-                    <h3><a href="blogposts/20180818-blueteamorredteam.html">Blue team or Red team?</a></h3>
-                </div><br>
-
-                <div class="card">
-                    <h5>2018.08.07 </h5>
-                    <h3><a href="blogposts/20180807-haveyallbeenpwned.html">Have Yall Been Pwned</a></h3>
-                </div><br><br><br>
+<div class="menu-wrap">
+    <input type="checkbox" class="toggler">
+    <div class="hamburger"><div></div></div>
+    <div class="menu">
+        <div>
+            <div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
+                    <li><a href="posts.html">Posts</a></li>
+                    <li><a href="socials.html">Socials</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                </ul>
             </div>
+        </div>
     </div>
 </div>
+
+<header class="showcase">
+    <div class="container showcase-inner">
+        <h1> Posts</h1>
+        <p><a href="blogposts/post-01-ohhello.html">Oh Hello</a></p>
+        <p><a href="blogposts/20190323-DataClassFrameworksLegalAgreements.html">Data Classification, Frameworks and Legal Agreements in Infosec</a></p>
+        <p><a href="blogposts/20190406-spearphish.html">How to Handle a Spear Phishing Email</a></p>
+        <p><a href="blogposts/20190216-BooksIReadin2018.html">Books I Read in 2018</a></p>
+        <p><a href="blogposts/20180818-blueteamorredteam.html">Blue team or Red team?</a></p>
+        <p><a href="blogposts/20180807-haveyallbeenpwned.html">Have Yall Been Pwned</a></p>
+    </div>
+</header>
 </body>
 </html>

@@ -38,6 +38,7 @@ ul{
     display: none;
 }
 
+/*
 @media screen and (max-width: 600px) {
   .menu a:not(:first-child) {display: none;}
   .men a.icon {
@@ -45,6 +46,7 @@ ul{
     display: block;
   }
 }
+*/
 
 .menu ul{
     padding:25px 15px;
@@ -149,6 +151,11 @@ a:visited{
 
 .blog-post a:hover{
  color: #3d94ca;
+}
+
+@media screen and (max-height: 600px) {
+  .menu {padding-top: 15px;}
+  .menu a {font-size: 18px;}
 }
 
 
