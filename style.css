@@ -1,5 +1,4 @@
 :root{
-    /*--primary-color: rgba(13,110,139,0.75);*/
     --primary-color:rgba(26, 26, 26, 0.75);
     --overlay-color:rgba(26, 26, 26, 0.90);
     --menu-speed: 0.75s;
@@ -17,7 +16,7 @@ font-family: 'Nunito Sans', sans-serif;
  }
 
  .container{
- max-width: 960px;
+ max-width: 600px;
  margin: auto;
  overflow: hidden;
  padding: 0 3rem;
