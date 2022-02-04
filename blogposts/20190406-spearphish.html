@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>How to Handle a Spear Phishing Email</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="../claudiastyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" href="../menu.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400&display=swap" rel="stylesheet">
+
+    <title>How to Handle a Spear Phishing Email</title>
 </head>
 <body>
-<div id="header">
-    <div id="navbar">
-        <div class="menu">
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../aboutme.html">About Me</a></li>
-                <li><a href="../posts.html">Posts</a></li>
-                <li><a href="../socials.html">Socials</a></li>
-            </ul>
+<div class="menu-wrap">
+    <input type="checkbox" class="toggler">
+    <div class="hamburger"><div></div></div>
+    <div class="menu">
+        <div>
+            <div>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../aboutme.html">About Me</a></li>
+                    <li><a href="../posts.html">Posts</a></li>
+                    <li><a href="../socials.html">Socials</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
 
-<div class="blog-post">
+<header class="showcase">
+    <div class="container">
+        <br><br>
     <h2>How to Handle a Spear Phishing Email</h2>
     <h5>2019.04.06 </h5>
 
@@ -48,7 +56,7 @@
     <p>* the malicious link does not use a link shortener</p>
 
 
-    <h3>1. Check the Email headers</h3>
+    <h2>1. Check the Email headers</h2>
     <p>Now if you don't know how to decipher the long poetry that is an email headers, its alright, I'm here for you.
         Luckily you use</p>
 
@@ -57,12 +65,9 @@
 
     <p>It's a handy website that has various useful tools you have to use. Specifically they have a Email Header
         Analyzer and does checks on the mail servers, and displays the information much more understandable.</p>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <img src="../images/20190406/MX.png" alt="">
-
-
-    <h3>2. Check the Phishing Site</h3>
+        <h3>[ add MX.png image ]</h3>
+        <br><br>
+    <h2>2. Check the Phishing Site</h2>
     <p>Do not go to the site directly in a browser. You're just asking for trouble. Instead check out</p>
 
     <p><b>VirusTotal: </b><a href="https://www.virustotal.com">https://www.virustotal.com</a></p>
@@ -72,10 +77,9 @@
         Additionally they provide you the final site, in case it redirects, and an IP which you WILL use in the
         next step.</p>
 
-    <img src="../images/20190406/VIRUSTOTAL.png" alt="">
 
-
-    <h3>3. Find the owner of the Domain and report it to the email</h3>
+        <br><br>
+    <h2>3. Find the owner of the Domain and report it to the email</h2>
     <p>You have two options here,</p>
     <p>* Go to a terminal (don't be afraid of the terminal), and type
         whois [badsite.blah]</p>
@@ -83,7 +87,7 @@
 
     <p><b>ARIN: </b><a href="https://www.arin.net/">https://www.arin.net/</a> and type in the IP of the site</p>
 
-    <img src="../images/20190406/ARIN.png" alt="">
+        <h3>[ add ARIN.png image ]</h3>
 
     <p>ARIN is not your best option for a contact since you are bound to run into a site that is not American, but it
         will give you a starting point, to which you will need to follow down the rabbit hole to find a contact.</p>
@@ -93,23 +97,26 @@
         gud and use a damn terminal. You'll thank me later. Once you report the site to be malicious, the owner can
         mitigate how to shut down the site.</p>
 
-    <h3>4. Do Your Due Diligence (don't be a jerk)</h3>
+        <br><br>
+    <h2>4. Do Your Due Diligence (don't be a jerk)</h2>
 
     <p>Once you have reported the site, it would be a nice idea to submit the phishing site to</p>
 
     <p><b>Google: </b><a href="https://safebrowsing.google.com/safebrowsing/report_phish/">https://safebrowsing.google.com/safebrowsing/report_phish/</a>
     </p>
 
-    <img src="../images/20190406/REPORTPHISH.png" alt="">
+        <h3>[ add REPORTPHISH.png image ]</h3>
 
-
+        <br><br>
     <p>And huzzah! Now you're ready! If more spear phishing emails come in with varying style or links, you just need
         to repeat the process as needed.</p>
 
     <p>Hope this post was helpful!</p>
 
-    <p>Happy securing! <3</p><br><br><br>
+        <br>
+    <h2>Happy securing! <3</h2><br><br><br>
 
 </div>
+</header>
 </body>
 </html>

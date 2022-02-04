@@ -1,6 +1,6 @@
 :root{
-    --primary-color:rgba(26, 26, 26, 0.75);
-    --overlay-color:rgba(26, 26, 26, 0.90);
+    --primary-color:rgba(26, 26, 26, 1);
+    --overlay-color:rgba(26, 26, 26, 0.75);
     --menu-speed: 0.75s;
 }
 
@@ -8,7 +8,7 @@
 box-sizing: border-box;
 margin: 0;
 padding: 0;
-background-color: var(--overlay-color);
+background-color: var(--primary-color);
 }
 
 body{
@@ -24,14 +24,12 @@ font-family: 'Nunito Sans', sans-serif;
  }
 
  .showcase{
- background-color: var(--primary-color);
  color:#fff;
  height: 100vh;
  position: relative;
  }
  .showcase:before{
  content:'';
- background-color: #2b2b2d;
  center/cover;
  position: absolute;
  top: 0;
@@ -62,7 +60,7 @@ font-family: 'Nunito Sans', sans-serif;
  .btn{
  display: inline-block;
  border: none;
- background-color: var(--primary-color);
+ background-color: #2b2b2d;
  color: #fff;
  padding: 0.75rem 1.5rem;
  margin-top: 1rem;
