@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../style.css">
+    <link rel="stylesheet" href="../../menu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400&display=swap" rel="stylesheet">
+
+    <title>How to use Virtual Box</title>
+</head>
+<body>
+<div class="menu-wrap">
+    <input type="checkbox" class="toggler">
+    <div class="hamburger"><div></div></div>
+    <div class="menu">
+        <div>
+            <div>
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../../aboutme.html">About</a></li>
+                    <li><a href="../../posts.html">Blog</a></li>
+                    <li><a href="../../tv.html">TV</a></li>
+                    <li><a href="../../socials.html">Socials</a></li>
+                    <li><a href="../../projects.html">Projects</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<header class="showcase">
+    <div class="container">
+        <br><br><br>
+    <h2>How to use Virtual Box – A Short Guide</h2>
+    <h5>2018.09.23</h5>
+
+        <br><br>
+        This week I wanted to talk about virtual machines and hypervisors. To elaborate, a virtual machines a
+            “machine” that is sharing physical hardware with another machine but is logically seen as another machine
+            by said physical machine. They share storage, memory, processor etc, except they see each other as
+            separate machines. It took me a while to wrap my head around it, but at some point I figured it out
+            through trial and error. So many (vm) casualties!! ha. Dont get attached to your vms though. But dont
+            fret, once you figure out how it works, you’ll find it immensely useful for firing up a kali box, or
+            practice on some pen testing skills or anything.
+
+        Anyways, there are a couple of applications to achieve this, but I am only going to talk about virtual box
+        since its open source, and open source is always Queeeeen!
+        [add image here]<br><br>
+
+        <strong>1. Download</strong>
+        First things first, you need to go and download Virtual Box and can do so at: https://www.virtualbox.org/
+            Download according to your machine. Pretty simple so far.
+        <br>
+        Then you need to download an ISO. This is the all data contained for a virtual machine in one easily
+            downloadable image. Think of this like a prepackaged laptop. The OS is in there, applications are in
+            there. All the things. So you can imagine its a prety big file. These files are called ISO files, because
+            (according to wiki) it originated from ISO 9660.
+            Anyways! You can choose to download some of the following linux based machines (they’re all open source
+            too):<br><br>
+        <ul>
+            <li>Fedora: https://alt.fedoraproject.org/</li>
+            <li>Kali: https://www.kali.org/downloads/</li>
+            <li>CentOS: https://www.centos.org/download/</li>
+            <li>Ubuntu: https://www.ubuntu.com/download</li>
+        </ul><br>
+
+        Random Cee fact:
+        Fedora was my introduction into a linux environment. My boss thought it was time for me to learn it since I
+        had been on the team for a while and thought I should understand the environment. So he arbitrarily chose
+        Fedora. Maybe as a lark? Nevertheless, Fedora will always have a special place in my heart. 🙂 <br><br>
+
+        <strong>2. Stahhhhp! Think about your available resources now</strong><br>
+        You need to take into account that this machine will be sharing resources with your actual physical machine,
+        so you’ll need to make sure you have ENOUGH resources to sustain this (i.e. storage, memory etc). If you
+        don’t have enough you will run into trouble. For now since this may be your first time doing this, make
+        sure you have at least double the amount. (if it’s not your first time then why are you here? Are you not
+        entertained? 🙂 )<br><br>
+
+        <strong>3. Create a New Virtual Machine</strong><br>
+        Give it a name, and choose its OS. They’re all Linux but their version will be dependent on what kind of
+        machine you current own (e.g. 32 bit or 64 bit).
+        [add image here]<br><br>
+
+        <strong>4. Give it some Memory</strong><br>
+        You should be fine with giving it 1024 MB.
+        [add image here]<br><br>
+
+        <strong>5. Create a Virtual Hard Disk </strong><br>
+        Since this is your first time create a virtual machine, you’ll be selecting
+        Create a virtual hard disk now.
+        [add image here]<br><br>
+
+        <strong>6. Select a Hard disk File Type</strong><br>
+        Since we already downloaded an ISO image, we’ll select the VDI option.
+        [add image here]<br><br>
+
+        <strong>7. Storage on Physical Hard Disk</strong><br>
+        Choose how the physical machine will allocate storage for the virtual machine.
+        Select Dynamically allocated<br><br>
+
+        <strong>8. File Location and Size </strong><br>
+        Decide on where the machine will be stored and how big the storage will be. The default for where it’s
+        filed (i.e. the directory) is fine, no need to move it, and for the storage I’d give it a bit more than the
+        recommended, just in case…
+        [add image here]<br><br>
+
+
+        <strong>9. Start and Install the ISO</strong><br>
+        Click the Start arrow and then select the folder icon and locate where the downloaded ISO image is at.
+        [add image here]<br><br>
+
+        <strong>10. Final Items</strong><br>
+        Once your past all that, you should be able to move on through. Then you will need to give root a password
+        and make sure its not weak. It’ll take a bit to install the ISO, around 5 -10 mins and you may need to
+        reboot. This depends on which ISO you chose. Once its all download youre all set!<br>
+
+        So I chose not to show a Kali vm specifically in this post because I thought that deserved a separate post
+        all together. VM and Kali are two different things and deserve there separate respected post. My next post
+        may be on a Kali VM and exploring it further.<br>
+
+        But for now, here is what you will see if you chose to create a Fedora VM.<br><br>
+
+        <i>Errors you might encounter below.</i><br>
+        First: If you are asked to reinstall the ISO, it may be that you need to delete the ISO from the optical
+        disk, which you can do so by selecting the Storage tab, and right click the Fedora ISO and select Remove
+        Attachment. This will make it appear to the machine as the machine will start normally.
+        [add image here]<br>
+
+        Second: If your vm is crazy slow, it may be that your Memory default settings need to be changed. You can do
+        this by selecting the System tab, and change the 1024MB youve allocated to a bit more. This will vary.
+        Remember back to Step 2 and tweak accordingly (or through trial and error). Maybe close all the things your
+        currently running on your machine, and see how it goes. Sorry if this isnt exact, but its not, cause I
+        don’t know the current processor youre using, but you do (or will after this).
+        [add image here]<br>
+
+        After you get it going your set. You now have a basic understanding of how Virtual box works. YAY go you! 😀<br>
+        Thats all for now. Hope this was helpful and I’ll see you in the next post! Take Care! 🙂
+
+        <br><br><br>
+    </div>
+</header>
+</body>
+</html>
+

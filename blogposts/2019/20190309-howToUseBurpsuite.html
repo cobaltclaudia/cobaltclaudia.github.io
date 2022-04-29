@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../style.css">
+    <link rel="stylesheet" href="../../menu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400&display=swap" rel="stylesheet">
+
+    <title>How to start using Burpsuite</title>
+</head>
+<body>
+<div class="menu-wrap">
+    <input type="checkbox" class="toggler">
+    <div class="hamburger"><div></div></div>
+    <div class="menu">
+        <div>
+            <div>
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../../aboutme.html">About</a></li>
+                    <li><a href="../../posts.html">Blog</a></li>
+                    <li><a href="../../tv.html">TV</a></li>
+                    <li><a href="../../socials.html">Socials</a></li>
+                    <li><a href="../../projects.html">Projects</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<header class="showcase">
+    <div class="container">
+        <br><br><br>
+    <h2>How to start using Burp Suite</h2>
+    <h5>2019.03.09</h5><br>
+
+        Hello world! I’m back!<br><br>
+
+        Anyways, this week I want to go over setting up Burps Suite, really quick!
+        BurpSuite is a tool I deeply appreciate and want everyone to know how get started using it. In case you don’t
+        know, Burp Suite is a tool used for finding vulnerabilities in web applications, ranging from detecting
+        unencrypted communications, to passwords sent in plain text, to altering variables sent from the client to the
+        server. It’s a really handy tool, and I highly recommend anyone who does not know what this is become familiar
+        with it ASAP. It will help you in your bug bounty path or just making sure your web application is less terrible.
+        So let’s just jump into it!<br><br>
+
+        <strong>Step 1: Download Burp Suite</strong><br>
+        You can download Burp Suite via their site at <a href="https://portswigger.net/burp/communitydownload">
+        https://portswigger.net/burp/communitydownload</a>.<br><br>
+
+        <strong>Step 2: Tweak your Browser</strong><br>
+        Why do you need to do this you may ask? This is so that you can set up a proxy and Burp can listen in on a
+        specific IP and port. My preferred browser is Firefox, so I’ll go over that browser, as well as its similar
+        to Iceweasel which is the standard browser on a Kali box. Your browser settings should be set as the picture
+        shows below.<br><br>
+
+        To do so just type about:preferences in the address bar > Networking settings. If you’re using a different
+        browser then figure it out for yourself. You ain’t dumb!<br><br>
+        [add archived image here]<br><br>
+
+        Now Burpsuite needs to know where you are listening in on, at what IP, and what port. Below is what Burpsuite
+        settings should be at.<br><br>
+
+        <strong>Step 3: Add the CA Cert to your browser</strong><br>
+        Start Burp Suite, then go to http://burp in your browser.<br>
+        Click CA Certificate, download the cacert.der file, and remember where its saved.<br>
+        The image below is all that should be happening.<br><br>
+        [add archived image here]<br><br>
+
+        Then in the address bar go to<br>
+        about:preferences#privacy > Certificates > View Certificates > Authorities > Import
+        > find where you saved your cacert.der file > Click Trust this CA to ID websites.<br>
+        Boom! Browser is set!<br><br>
+        [add archived image here]<br><br>
+
+        <strong>Step 5: Explore a site MANUALLY</strong><br>
+        With Burp Suite open, go to a site, in my example I just went to http://hackthissite.org/ which is a site your
+        are allowed to play with for the benefit of practicing your skills.<br>
+
+        <iframe width="50%" height="100%" src="https://www.youtube.com/embed/8Q31unA_42I" title="YouTube video player"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
+                picture-in-picture" allowfullscreen></iframe><br><br>
+
+        And that should get you started in using Burp Suite in no time. Now notice I said manually to search the site.
+        This is because while automation is very useful, your curiosity is your friend. “oh whats that, and if i change
+        this what happens?” Have more of those moments, and you’re golden.<br><br>
+
+        There are several other features to this amazing tool. But I figured I would do that in a later post exploring
+        all the tabs. Didnt want this post to get long. Long post aren’t my style.<br><br>
+
+        <strong>Bonus Step! </strong><br>
+        If you’re really intrigued by the possibilities of what BurpSuite is capable of, I highly recommend you get
+        your copy of Web Hacking 101 by Peter Yaworski.<br>
+        <a href="https://www.hackerone.com/blog/Hack-Learn-Earn-with-a-Free-E-Book">
+            https://www.hackerone.com/blog/Hack-Learn-Earn-with-a-Free-E-Book</a><br>
+        You wont regret it. 🙂<br>
+        Happy hacking!<br><br>
+
+        <strong>Note:</strong><br>
+        Now this is just a quick run down of what a new comer to infosec will see, and is not mean to be an all
+        inclusive post. I’m writing this in hopes that it gives others a quick snapshot of what to expect, as well as
+        become familiar with a topic which may otherwise be new to them.<br><br>
+
+        For more info, check out Burp Suites documentation at: <a href="https://portswigger.net/burp/documentation">
+        https://portswigger.net/burp/documentation.</a>
+
+        <br><br><br><br><br>
+    </div>
+</header>
+</body>
+</html>
+
