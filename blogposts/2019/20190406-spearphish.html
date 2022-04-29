@@ -38,86 +38,76 @@
     <h5>2019.04.06</h5>
         <br>
 
-    <p>Whats up! Today I thought it would be interesting to go over some general steps of handling a spear
-        phishing
-        email. These are some steps I used to take at my previous job as an Infosec Specialist. I was the main
-        one who
+    Whats up! Today I thought it would be interesting to go over some general steps of handling a spear phishing
+        email. These are some steps I used to take at my previous job as an Infosec Specialist. I was the main one who
         handled spear phishing emails. We were a small team. Maybe things have changed now, but I still think
-        there's
-        some info for others to gain insight into.</p>
+        there's some info for others to gain insight into.<br><br>
 
-    <p>* Spear phishing email - These aren't you mothers standard "You won the lottery!" phishing email, these
-        are
-        much more targeted to your organization and attackers have tailor their emails to look very similar to
-        your
-        organizations.</p>
+    * Spear phishing email - These aren't you mothers standard "You won the lottery!" phishing email, these are much
+        more targeted to your organization and attackers have tailor their emails to look very similar to
+        your organizations.<br><br>
 
-    <p>Now for argument sake, I will go through these steps assuming the following:</p>
-    <p>* there is no attachment</p>
-    <p>* you have the original email, not a forwarded email</p>
-    <p>* you know what to do once an account is compromised</p>
-    <p>* the malicious link does not use a link shortener</p>
+    Now for argument sake, I will go through these steps assuming the following:
+    * there is no attachment
+    * you have the original email, not a forwarded email
+    * you know what to do once an account is compromised
+    * the malicious link does not use a link shortener<br><br>
 
 
-    <h2>1. Check the Email headers</h2>
-    <p>Now if you don't know how to decipher the long poetry that is an email headers, its alright, I'm here for you.
-        Luckily you use</p>
+    <strong>1. Check the Email headers</strong><br>
+    Now if you don't know how to decipher the long poetry that is an email headers, its alright, I'm here for you.
+        Luckily you use<br><br>
 
-    <p><b>MXToolBox: </b><a href="https://mxtoolbox.com/EmailHeaders.aspx">https://mxtoolbox.com/EmailHeaders.aspx</a>
-    </p>
+    <b>MXToolBox: </b><a href="https://mxtoolbox.com/EmailHeaders.aspx">https://mxtoolbox.com/EmailHeaders.aspx</a><br><br>
 
-    <p>It's a handy website that has various useful tools you have to use. Specifically they have a Email Header
-        Analyzer and does checks on the mail servers, and displays the information much more understandable.</p>
-        <h3>[ add MX.png image ]</h3>
-        <br><br>
-    <h2>2. Check the Phishing Site</h2>
-    <p>Do not go to the site directly in a browser. You're just asking for trouble. Instead check out</p>
 
-    <p><b>VirusTotal: </b><a href="https://www.virustotal.com">https://www.virustotal.com</a></p>
+    It's a handy website that has various useful tools you have to use. Specifically they have a Email Header
+        Analyzer and does checks on the mail servers, and displays the information much more understandable.<br>
+        [ add MX.png image ]<br><br>
 
-    <p>Here you can check if the site has been reported, and flagged as
+    <strong>2. Check the Phishing Site</strong><br>
+    Do not go to the site directly in a browser. You're just asking for trouble. Instead check out<br><br>
+
+    VirusTotal: <a href="https://www.virustotal.com">https://www.virustotal.com</a><br><br>
+
+    Here you can check if the site has been reported, and flagged as
         malicious. If not, it will let them know to watch out for it in case others are seeing similar traffic.
         Additionally they provide you the final site, in case it redirects, and an IP which you WILL use in the
-        next step.</p>
+        next step.<br><br>
 
+    <strong>3. Find the owner of the Domain and report it to the email</strong><br>
+    You have two options here,<br>
+    * Go to a terminal (don't be afraid of the terminal), and type
+        whois [badsite.blah]<br><br>
 
-        <br><br>
-    <h2>3. Find the owner of the Domain and report it to the email</h2>
-    <p>You have two options here,</p>
-    <p>* Go to a terminal (don't be afraid of the terminal), and type
-        whois [badsite.blah]</p>
-    <p>* Alternatively, if for whatever reason you don't have a terminal option, you can go to</p>
+    * Alternatively, if for whatever reason you don't have a terminal option, you can go to<br>
 
-    <p><b>ARIN: </b><a href="https://www.arin.net/">https://www.arin.net/</a> and type in the IP of the site</p>
+    <b>ARIN: </b><a href="https://www.arin.net/">https://www.arin.net/</a> and type in the IP of the site<br>
 
-        <h3>[ add ARIN.png image ]</h3>
+        [ add ARIN.png image ]<br><br>
 
-    <p>ARIN is not your best option for a contact since you are bound to run into a site that is not American, but it
-        will give you a starting point, to which you will need to follow down the rabbit hole to find a contact.</p>
+    ARIN is not your best option for a contact since you are bound to run into a site that is not American, but it
+        will give you a starting point, to which you will need to follow down the rabbit hole to find a contact.<br><br>
 
-    <p>Both options will provide you with a contact, except one is faster, and speed is important in these scenario.
+    Both options will provide you with a contact, except one is faster, and speed is important in these scenario.
         Exponentially increasing compromised accounts while a spear phishing issue is happening is... NOT fun. So git
         gud and use a damn terminal. You'll thank me later. Once you report the site to be malicious, the owner can
-        mitigate how to shut down the site.</p>
+        mitigate how to shut down the site.<br><br>
 
-        <br><br>
-    <h2>4. Do Your Due Diligence (don't be a jerk)</h2>
+    <strong>4. Do Your Due Diligence (don't be a jerk)</strong><br>
 
-    <p>Once you have reported the site, it would be a nice idea to submit the phishing site to</p>
+    Once you have reported the site, it would be a nice idea to submit the phishing site to<br><br>
 
-    <p><b>Google: </b><a href="https://safebrowsing.google.com/safebrowsing/report_phish/">https://safebrowsing.google.com/safebrowsing/report_phish/</a>
-    </p>
+    <b>Google: </b><a href="https://safebrowsing.google.com/safebrowsing/report_phish/">https://safebrowsing.google.com/safebrowsing/report_phish/</a><br>
 
-        <h3>[ add REPORTPHISH.png image ]</h3>
+        [ add REPORTPHISH.png image ]<br><br>
 
-        <br><br>
-    <p>And huzzah! Now you're ready! If more spear phishing emails come in with varying style or links, you just need
-        to repeat the process as needed.</p>
+    And huzzah! Now you're ready! If more spear phishing emails come in with varying style or links, you just need
+        to repeat the process as needed.<br>
 
-    <p>Hope this post was helpful!</p>
+    Hope this post was helpful!<br>
 
-        <br>
-    <h2>Happy securing! <3</h2><br><br><br>
+    <strong>Happy securing! <3</strong><br><br><br>
 
 </div>
 </header>
