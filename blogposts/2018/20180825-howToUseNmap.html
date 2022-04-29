@@ -33,53 +33,52 @@
 
 <header class="showcase">
     <div class="container">
-        <br><br><br>
+        <br><br>
     <h2>How to use Nmap – A Short Guide</h2>
     <h5>2018.08.25</h5>
 
-        <br><br>
-        <p>Hey! So in this post I thought I would quickly go over nmap, which IMO is the swiss army knife of IT. It
-            was the very first tool I ever learned, and is my default for several things. Below are just a couple of
-            commands I find myself using a lot of the time.</p><br>
+        <br>
+        Hey! So in this post I thought I would quickly go over nmap, which IMO is the swiss army knife of IT. It
+        was the very first tool I ever learned, and is my default for several things. Below are just a couple of
+        commands I find myself using a lot of the time.<br>
 
-        <p>Edit: I just made a video for those who prefer videos over blog posts. It’s linked below and also at the
-            bottom of this post.</p><br>
+        Edit: I just made a video for those who prefer videos over blog posts. It’s linked below and also at the
+        bottom of this post.<br><br>
 
         <ul>
             <li><a href="#"> How to Use Nmap video</a> </li>
         </ul><br>
 
-        <h2>Download</h2>
+        <strong>Download</strong><br>
+        Go to <a href="#">https://nmap.org/download.html</a> and download nmap according to your machine.<br><br>
+        Once downloaded, you can just type man nmap and it will provide the long descriptive manual.<br><br>
 
-        <p>Go to <a href="#">https://nmap.org/download.html</a> and download nmap according to your machine.</p><br>
-
-        <p>Once downloaded, you can just type man nmap and it will provide the long descriptive manual.</p><br>
-
-        <h2>Common Commands</h2>
+        <strong>Common Commands</strong><br>
         <ul>nmap -Pn -T3 --open -p[ports] -oG outputFile.txt</ul><br>
 
-        <p>Edit the ports section as need and remove the brackets
-            (for more info on ports, check out my <a href="#">Basic Ports To Know</a> post)</p><br>
+        Edit the ports section as need and remove the brackets<br>
+        (for more info on ports, check out my <a href="#">Basic Ports To Know</a> post)<br><br>
 
         <ul>-oG allows for a outpul file</ul><br>
 
-        <ul>Nmap scan report for [hostname.com] (192.168.1.1) Host is up (0.0039s latency). Not shown: [998]
-            closed ports PORT     STATE SERVICE 80/tcp   open  http 443/tcp open  http</ul><br>
+        Nmap scan report for [hostname.com] (192.168.1.1) Host is up (0.0039s latency). Not shown: [998]
+            closed ports PORT     STATE SERVICE 80/tcp   open  http 443/tcp open  http<br><br>
 
-        <p>Additionally you can grep out specific lines (How to Grep and Awk) , which will grab all lines containing
+        Additionally you can grep out specific lines (How to Grep and Awk) , which will grab all lines containing
             the word your looking for. This is really useful if you are scanning multiple ip’s
-            (like your home network).</p><br>
+            (like your home network).<br><br>
 
-        <ul>nmap -Pn -T3 --open -p[ports] -oG outputFile.txt | grep nmap</ul><br>
-        <ul>Nmap scan report for [hostname0.com] (192.168.1.1) Nmap scan report for [hostname1.com]
-            (192.168.1.2) Nmap scan report for [hostname2.com] (192.168.1.3)</ul><br>
+        nmap -Pn -T3 --open -p[ports] -oG outputFile.txt | grep nmap<br><br>
 
-        <h2>NSE Scripts (Underrated feature)</h2>
-        <p>You can also add a script to your nmap scan</p><br>
+        Nmap scan report for [hostname0.com] (192.168.1.1) Nmap scan report for [hostname1.com]
+            (192.168.1.2) Nmap scan report for [hostname2.com] (192.168.1.3)<br><br>
 
-        <ul>nmap -Pn --open -T3 -p [ports] --script=[script name] -oG outputFile.txt | grep nmap</ul><br>
+        <strong>NSE Scripts (Underrated feature)</strong><br>
+        You can also add a script to your nmap scan<br><br>
 
-        <p>Some examples of the scripts are:</p>
+        nmap -Pn --open -T3 -p [ports] --script=[script name] -oG outputFile.txt | grep nmap<br><br>
+
+        Some examples of the scripts are:
         <ul>
             <li>ssl-heartbleed</li>
             <li>ssl-poodle</li>
@@ -89,13 +88,13 @@
             <li>snmp-netstat</li>
         </ul><br>
 
-        <p>The complete list of the scripts can be found:
-            <a href="https://nmap.org/nsedoc/">https://nmap.org/nsedoc/</a> </p><br>
+        The complete list of the scripts can be found:<br>
+        <a href="https://nmap.org/nsedoc/">https://nmap.org/nsedoc/</a> <br><br>
 
-        <p>But thats it. Hopefully thats helpful. Simple enough, but very useful! So now you know how to quickly use
-            nmap and can check it out to scope out your own network.</p><br>
+        But thats it. Hopefully thats helpful. Simple enough, but very useful! So now you know how to quickly use
+        nmap and can check it out to scope out your own network.<br><br>
 
-        <p>Take care, Byeee! :]</p>
+        Take care, Byeee! :]
 
         <br><br><br>
     </div>
